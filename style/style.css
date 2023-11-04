@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+  }
+  
+
+  header{
+    background-image: url(../asset/R.jfif);
+    background-size: contain;
+    height: 15vh;
+  }
+
+  body {
+    background: #E3EFF1;
+    background-image: url(../asset/wp2327413.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  
+  .card-row {
+    max-width: 1600px;
+    height: 410px;
+    margin: 25px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    position: relative;
+    height: 370px;
+    width: 240px;
+    background: white;
+    border-radius: 3px;
+    overflow: hidden;
+    transition: .4s all ease-in-out;
+    z-index: 1;
+    box-shadow: 5px 4px 15px rgba(196, 196, 196, .4);
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 40px;
+    width: calc(20% - 20px);
+    cursor: pointer;
+  }
+  
+  .card-image {
+    position: absolute;
+    top: 0;
+    height: 240px;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+    transition: .4s all ease-in-out;
+  }
+  
+  .card-footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    height: 130px;
+    padding: 20px 20px;
+    box-sizing: border-box;
+  }
+  
+  .card-title {
+    font-family: 'Grenze', serif;
+    font-size: 18px;
+    line-height: 21px;
+    margin-bottom: 10px;
+    letter-spacing: 0.04em;
+  }
+  
+  .card-text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    margin-bottom: 5px;
+    line-height: 14px;
+    letter-spacing: 0.07em;
+  }
+  
+  .card-text:last-child {
+    letter-spacing: unset;
+  }
+  
+  .card-author {
+    font-weight: 500;
+    font-size: 16px;
+    font-style: italic;
+    color: burlywood;
+    text-transform: capitalize;
+  }
+  
+  .card:hover {
+    height: 410px;
+    transition: .4s all cubic-bezier(.28, .01, .3, 1.02) .2s;
+    margin: 10px; 
+    box-shadow: 20px 25px 30px rgba(0, 0, 0, 0.25);
+  }
+  
+  .card:hover .card-image {
+    transition: .4s all cubic-bezier(.28, .01, .3, 1.02) .2s;
+    height: 75%;
+    opacity: .3;
+  }
+  
+  .icon{
+    max-width: 25px;
+    max-height: 25px;
+  }
+
+  .card-foot{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10%;
+  }
+
+  .price{
+    margin-top: 2%;
+  }
+
+  .cart {
+    position: fixed;
+    right: 0;
+    width: 200px; /* Ajustez la largeur en fonction de vos besoins */
+    height: 100%; /* Pour occuper toute la hauteur de la page */
+    background-color: #007e1300; /* Arrière-plan du panier */
+    border-left: 1px solid #cccccc00; /* Bordure du panier */
+    overflow-y: auto; /* Ajoutez une barre de défilement si nécessaire */
+    color: #fff;
+}
+
+aside .btn{
+  color: red;
+}
